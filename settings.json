@@ -1,0 +1,51 @@
+{
+  "font_size": 20,
+  "scroll_speed": 2,
+  "background": "",
+  "title": "初三11班 - 回家作业",
+  "global_settings": {
+    "textbooks": [
+      "练习册",
+      "课本",
+      "试卷",
+      "练习纸",
+      "作业本",
+      "课时"
+    ],
+    "child_tasks": [
+      "写完",
+      "完成",
+      "抄写",
+      "默写",
+      "背诵",
+      "签字",
+      "只写",
+      "不写",
+      "预习",
+      "复习",
+      "订正"
+    ]
+  },
+  "block_row": 2,
+  "subject_settings": [
+  {"subject":"语文","textbooks":[],"child_tasks":[],"qqmsg_keywords":["语文:","语文：","语文作业:","语文作业：","语文作业"]},
+  {"subject":"数学","textbooks":["报纸"],"child_tasks":[],"qqmsg_keywords":["数学:","数学：","数学作业:","数学作业：","数学作业"]},
+  {"subject":"英语","textbooks":["综素","错题本"],"child_tasks":["自默"],"qqmsg_keywords":["英语:","英语：","英语作业:","英语作业：","英语作业","english","english作业","English","english","English作业","English homework","English Homework","EnglishHomework","English schoolwork","English Schoolwork","EnglishSchoolwork"]},
+  {"subject":"物理","textbooks":["小练"],"child_tasks":[],"qqmsg_keywords":["物理:","物理：","物理作业:","物理作业：","物理作业"]},
+  {"subject":"化学","textbooks":["小练"],"child_tasks":[],"qqmsg_keywords":["化学:","化学：","化学作业:","化学作业：","化学作业"]},
+  {"subject":"生物","textbooks":[],"child_tasks":[],"qqmsg_keywords":["生物:","生物：","生物作业:","生物作业：","生物作业"]},
+  {"subject":"政治", "textbooks":[], "child_tasks": [], "qqmsg_keywords":["政治:","政治：","政治作业:","政治作业：","政治作业"]},
+  {"subject":"历史", "textbooks":[], "child_tasks": [], "qqmsg_keywords":["历史:","历史：","历史作业:","历史作业：","历史作业"]},
+  {"subject":"地理", "textbooks":[], "child_tasks": [], "qqmsg_keywords":["地理:","地理：","地理作业:","地理作业：","地理作业"]}
+  ],
+  "tags": [
+    "重要",
+    "学校交",
+    "背诵",
+    "笔头",
+    "优先",
+    "认真完成",
+    "默写",
+    "订正"
+  ]
+}
