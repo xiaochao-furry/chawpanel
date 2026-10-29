@@ -3,16 +3,9 @@ from PySide2.QtCore import Qt,QEvent,Signal,QTimer
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtGui import QFont, QPixmap
 import sys,os,time,datetime
-from plyer import notification
-
-notification.notify(
-    title='test通知',
-    message='运作正常',
-    timeout=5  # 通知显示时长（秒）
-)
 
 
-import DataReader,SettingDeader
+import DataReader,SettingReader
 
 #来看看我写的史山 ^w^
 
@@ -20,7 +13,7 @@ import DataReader,SettingDeader
 
 app = QApplication()
 app.setStyle("Fusion")
-settings = SettingDeader.load_settings()
+
 loaded_file = DataReader.get_today_csv_path()
 
 
@@ -59,10 +52,10 @@ class SubjectBlock(QWidget):   # 作业板块类
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.auto_scroll)
 
-        key_words = settings["key_words"]
+        key_words = SettingReader.load_settings()["key_words"]
 
 
-        self.auto_scroll_speed = settings["scroll_speed"] # 每次移动px
+        self.auto_scroll_speed = SettingReader.load_settings()["scroll_speed"] # 每次移动px
 
         self.timer.setInterval(80)
         self.auto_scroll_paused = False 
@@ -314,7 +307,7 @@ class MainBoard(QMainWindow):  # 主窗口
         self.ui.choose_date_btn.clicked.connect(self.choose_date_window)
         self.ui.export_btn.clicked.connect(self.export_uaf)
         self.ui.import_btn.clicked.connect(self.import_uaf)
-        self.ui.title_text.setText(" " + settings["title"])
+        self.ui.title_text.setText(" " + SettingReader.load_settings()["title"])
 
 
         
@@ -358,11 +351,11 @@ class MainBoard(QMainWindow):  # 主窗口
             block = SubjectBlock(subject=homework.subject, content=homework.content, tags=homework.tags)
             block.content_updated.connect(lambda new_text, new_tags, idx=index: self.update_item_content(idx, new_text, new_tags))
             block.deleted.connect(lambda index=index: self.delete_item(index))
-            self.block_grid.addWidget(block, self.block_grid.count() // settings["block_row"], self.block_grid.count() % settings["block_row"])
+            self.block_grid.addWidget(block, self.block_grid.count() // SettingReader.load_settings()["block_row"], self.block_grid.count() % SettingReader.load_settings()["block_row"])
             self.block_widgets.append(block)
 
 
-        self.ui.title_text.setText(settings["title"])
+        self.ui.title_text.setText(SettingReader.load_settings()["title"])
 
     def update_item_content(self, index: int, new_text: str, new_tags: str):
         
@@ -695,8 +688,8 @@ class AddBlockWindow(QDialog):  # 添加作业板块窗口
 
         self.ui.confirm_button.clicked.connect(self.confirm)
         subject_choices = self.ui.subject_choice
-
-        subject_choices.addItems(settings["subjects"])
+        for subject_setting in SettingReader.load_settings()["subject_settings"]:
+            subject_choices.addItem(subject_setting["subject"])
 
 
     def confirm(self):
@@ -750,7 +743,7 @@ class AddTagWindow(QDialog):  # 添加标签窗口
         self.ui.confirm_button.clicked.connect(self.confirm)
         self.ui.del_button.clicked.connect(self.remove_tag)
         tag_choices = self.ui.tag_choice
-        tag_choices.addItems(settings["tags"])
+        tag_choices.addItems(SettingReader.load_settings()["tags"])
 
     def confirm(self):
         tag = self.ui.tag_choice.currentText()
