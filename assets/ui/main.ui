@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>71</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="hide_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #4a9eff;
+color: white;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>隐藏/
+显示</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="move_bar">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>SizeAllCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(106, 106, 106);
+color: white;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>拖动 :::::::::::</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boardmode_btn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #4a9eff;
+color: white;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>展板/
+贴纸模式</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setting_btn">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #4a9eff;
+color: white;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

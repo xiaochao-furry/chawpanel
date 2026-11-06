@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>932</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form {
+    background-color: #F3F3F3;
+    color: #1B1B1B;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" rowspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">#widget {
+    background-color: #F3F3F3;
+    color: #1B1B1B;
+}</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>16</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>16</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>16</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>12</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="title">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>36</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+    border-left: 4px solid #0067C0;
+    padding-left: 10px;
+    color: #1B1B1B;
+}</string>
+        </property>
+        <property name="text">
+         <string>作业编辑 - 科目</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>36</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    background: transparent;
+    border: none;
+    color: #1B1B1B;
+}</string>
+        </property>
+        <property name="text">
+         <string>快捷模板</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="verticalFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>700</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#verticalFrame {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>16</number>
+           </property>
+           <property name="topMargin">
+            <number>16</number>
+           </property>
+           <property name="rightMargin">
+            <number>16</number>
+           </property>
+           <property name="bottomMargin">
+            <number>16</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>600</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#groupBox {
+    border: none;
+    background: transparent;
+}</string>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <property name="horizontalSpacing">
+               <number>8</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>10</number>
+              </property>
+              <item row="2" column="0" colspan="4">
+               <widget class="QPlainTextEdit" name="content_editor">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="cursor" stdset="0">
+                 <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="mouseTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="tabletTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#content_editor {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 10px;
+    selection-background-color: #CCE4F7;
+    selection-color: #1B1B1B;
+}
+#content_editor:hover {
+    border: 1px solid #D0D0D0;
+}
+#content_editor:focus {
+    border: 1px solid #0067C0;
+}
+#content_editor QMenu {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#content_editor QMenu::item {
+    padding: 4px 20px;
+}
+#content_editor QMenu::item:selected {
+    background-color: #EAF3FC;
+    color: #0067C0;
+}
+#content_editor QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 2px;
+    border: none;
+}
+#content_editor QScrollBar::handle:vertical {
+    background: #C9C9C9;
+    border-radius: 4px;
+    min-height: 24px;
+}
+#content_editor QScrollBar::handle:vertical:hover {
+    background: #A9A9A9;
+}
+#content_editor QScrollBar::add-line:vertical,
+#content_editor QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: transparent;
+    border: none;
+}
+#content_editor QScrollBar::add-page:vertical,
+#content_editor QScrollBar::sub-page:vertical {
+    background: transparent;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="add_tag">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>36</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="tabletTracking">
+                 <bool>true</bool>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#add_tag {
+    background-color: #0067C0;
+    color: #FFFFFF;
+    border: 1px solid #0067C0;
+    border-radius: 5px;
+    padding: 6px 16px;
+}
+#add_tag:hover {
+    background-color: #1976C8;
+    border: 1px solid #1976C8;
+}
+#add_tag:pressed {
+    background-color: #005A9E;
+    border: 1px solid #005A9E;
+}</string>
+                </property>
+                <property name="text">
+                 <string>添加标签</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="del_btn">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>36</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#del_btn {
+    background-color: transparent;
+    color: #C42B1C;
+    border: 1px solid #F1B7B9;
+    border-radius: 5px;
+    padding: 6px 16px;
+}
+#del_btn:hover {
+    background-color: #FDE7E9;
+    border: 1px solid #E8A5A5;
+}
+#del_btn:pressed {
+    background-color: #FBD0D3;
+    border: 1px solid #E8A5A5;
+}</string>
+                </property>
+                <property name="text">
+                 <string>删除本科</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="tag_display">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    background-color: #F3F3F3;
+    color: #3B3B3B;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 8px 12px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>已添加的标签：</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="4">
+               <widget class="QFrame" name="edit_button_kit">
+                <property name="styleSheet">
+                 <string notr="true">#edit_button_kit{
+
+border-top:1px solid #E6E6E6
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>6</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="copy_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#copy_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#copy_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#copy_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>⧉复制</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="paste_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#paste_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#paste_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#paste_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>📋粘贴</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="cut_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#cut_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#cut_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#cut_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>✂剪切</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="undo_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#undo_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#undo_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#undo_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>↶撤销</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="redo_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#redo_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#redo_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#redo_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>↷重做</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="select_all_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#select_all_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#select_all_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#select_all_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>⊞全选</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="clean_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>微软雅黑</family>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">#clean_btn {
+    background-color: transparent;
+    color: #C42B1C;
+    border: 1px solid #F1B7B9;
+    border-radius: 5px;
+    padding: 6px 16px;
+}
+#clean_btn:hover {
+    background-color: #FDE7E9;
+    border: 1px solid #E8A5A5;
+}
+#clean_btn:pressed {
+    background-color: #FBD0D3;
+    border: 1px solid #E8A5A5;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>🗑清空</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="horizontalSpacing">
+         <number>12</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>8</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QListView" name="task_words_list">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QListView {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 4px;
+    outline: none;
+}
+QListView::item {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+QListView::item:hover {
+    background-color: #F3F3F3;
+}
+QListView::item:selected {
+    background-color: #EAF3FC;
+    color: #0067C0;
+}
+QListView QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 2px;
+    border: none;
+}
+QListView QScrollBar::handle:vertical {
+    background: #C9C9C9;
+    border-radius: 4px;
+    min-height: 24px;
+}
+QListView QScrollBar::handle:vertical:hover {
+    background: #A9A9A9;
+}
+QListView QScrollBar::add-line:vertical,
+QListView QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: transparent;
+    border: none;
+}
+QListView QScrollBar::add-page:vertical,
+QListView QScrollBar::sub-page:vertical {
+    background: transparent;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QListView" name="childtask_words_list">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QListView {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 4px;
+    outline: none;
+}
+QListView::item {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+QListView::item:hover {
+    background-color: #F3F3F3;
+}
+QListView::item:selected {
+    background-color: #EAF3FC;
+    color: #0067C0;
+}
+QListView QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 2px;
+    border: none;
+}
+QListView QScrollBar::handle:vertical {
+    background: #C9C9C9;
+    border-radius: 4px;
+    min-height: 24px;
+}
+QListView QScrollBar::handle:vertical:hover {
+    background: #A9A9A9;
+}
+QListView QScrollBar::add-line:vertical,
+QListView QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: transparent;
+    border: none;
+}
+QListView QScrollBar::add-page:vertical,
+QListView QScrollBar::sub-page:vertical {
+    background: transparent;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #1B1B1B;
+    background: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>本科作业条目</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="num1_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num1_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num1_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num1_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="num2_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num2_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num2_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num2_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="num3_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num3_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num3_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num3_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="question_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#question_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#question_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#question_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>题</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="num4_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num4_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num4_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num4_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="num5_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num5_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num5_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num5_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="num6_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num6_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num6_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num6_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="and_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#and_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#and_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#and_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>与</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="num7_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num7_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num7_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num7_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="num8_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num8_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num8_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num8_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="num9_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num9_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num9_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num9_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="page_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#page_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#page_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#page_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>P</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="to_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#to_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#to_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#to_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="num0_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#num0_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#num0_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#num0_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QPushButton" name="backspace_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#backspace_btn {
+    background-color: #FDE7E9;
+    color: #C42B1C;
+    border: 1px solid #F1B7B9;
+    border-radius: 5px;
+}
+#backspace_btn:hover {
+    background-color: #FBD0D3;
+    border: 1px solid #E8A5A5;
+}
+#backspace_btn:pressed {
+    background-color: #F5B5B8;
+    border: 1px solid #E8A5A5;
+}</string>
+            </property>
+            <property name="text">
+             <string>⌫</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QPushButton" name="colon_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#colon_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#colon_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#colon_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0" colspan="2">
+           <widget class="QPushButton" name="space_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#space_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#space_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#space_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>⌴</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QPushButton" name="enter_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#enter_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#enter_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#enter_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>↵</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QPushButton" name="dot_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#dot_btn {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+#dot_btn:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #D0D0D0;
+}
+#dot_btn:pressed {
+    background-color: #E6E6E6;
+    border: 1px solid #C4C4C4;
+}</string>
+            </property>
+            <property name="text">
+             <string>.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #1B1B1B;
+    background: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>任务要求</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QPushButton" name="save_btn">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#save_btn {
+    background-color: #0067C0;
+    color: #FFFFFF;
+    border: 1px solid #0067C0;
+    border-radius: 5px;
+    padding: 6px 24px;
+}
+#save_btn:hover {
+    background-color: #1976C8;
+    border: 1px solid #1976C8;
+}
+#save_btn:pressed {
+    background-color: #005A9E;
+    border: 1px solid #005A9E;
+}
+#save_btn:disabled {
+    background-color: #C9C9C9;
+    border: 1px solid #C9C9C9;
+}</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
